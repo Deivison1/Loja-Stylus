@@ -141,19 +141,28 @@ li > a{
     justify-content: center;
     border-radius: 0.35rem;
     background-color: white;
-    box-shadow: 1px 2px 2px #8383e5e2;
+    box-shadow: 1px 1px 1.5px 1px #8383e5e2;
 }
 
 .info-carrinho{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-top: 1rem;
     box-shadow: 1px 1px 1px #1a1a1d12;
     
 }
 .info-carrinho > p{
+    margin-right: 20px;
+}
+.info-total{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+.info-total > p{
     margin-right: 20px;
 }
 .container-form{

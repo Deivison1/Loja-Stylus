@@ -6,41 +6,44 @@ fetch("./itens.json")
             var containerProdutos = document.getElementById('produtos'); 
             items.map((val) => { 
                 containerProdutos.innerHTML += ` 
-        <div class="produto-single"> 
-            <img src="./img/`+ val.img + `"<img/> 
-            <p>`+ val.nome + `</p> 
-            <p>Valor: R$ `+ val.preco +`</p> 
-            <a class= "link-carrinho"key="`+ val.id + `" href="#carrinho">Adicionar ao carrinho!</a> 
-        </div> 
+            <div class="produto-single"> 
+                <img src="./img/`+ val.img + `"<img/> 
+                <p>`+ val.nome + `</p> 
+                <p>Valor: R$ `+ val.preco +`</p> 
+                <a class= "link-carrinho"key="`+ val.id + `" href="#carrinho">Adicionar ao carrinho!</a> 
+            </div> 
  
-        `; 
+            `; 
             }) 
         } 
         incinializarLoja(); 
  
         atualizarCarrinho = () => { 
 
-            var total = 0;
-            var quantidade = 0;
-            var containerCarrinho = document.getElementById('carrinho'); 
+var valorTotal = 0;
+var quantidadeTotal = 0;
+var containerCarrinho = document.getElementById('carrinho'); 
  
-            containerCarrinho.innerHTML = ""; 
+    containerCarrinho.innerHTML = ""; 
  
-            items.map((val) => { 
-                if (val.quantidade > 0) { 
-                    containerCarrinho.innerHTML += ` 
+    items.map((val) => { 
+        if (val.quantidade > 0) { 
+            containerCarrinho.innerHTML += ` 
             <div class="info-carrinho"> 
                 <p>Produto: `+ val.nome + `</p> 
                 <p>Qtde: `+ val.quantidade + `</p> 
-                <p>Preço: `+ val.preco * val.quantidade + `</p> 
+                <p style="float:right;">Preço: R$ `+ val.preco * val.quantidade + `</p> 
             </div> 
         ` 
-        total = total + val.preco * val.quantidade 
-        quantidade = quantidade + val.quantidade 
+        valorTotal = valorTotal + val.preco * val.quantidade 
+        quantidadeTotal = quantidadeTotal + val.quantidade 
             }; 
         }) 
-        containerCarrinho.innerHTML += 
-        `<p>Quantidade total: ${quantidade} Valor total:${total}</p>`;
+        containerCarrinho.innerHTML += `
+        <div class="info-total">
+            <p>Quantidade total: ${quantidadeTotal}</p> 
+            <p Style="float: right;">Valor total: R$ ${valorTotal}</p> 
+        </div>`;
             
         } 
         var links = document.getElementsByTagName('a'); 
