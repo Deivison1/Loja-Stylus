@@ -1,33 +1,8 @@
-const items = [
-    {
-        id:0,
-        nome: 'Camiseta modelo 1',
-        img: 'Camiseta.png',
-        preco: 35,
-        quantidade: 0
-    },
-    {
-        id:1,
-        nome: 'Camiseta modelo 2',
-        img: 'Camiseta.png',
-        preco: 40,
-        quantidade: 0
-    },
-    {
-        id: 2,
-        nome: 'Camiseta modelo 3',
-        img: 'Camiseta.png',
-        preco: 42,
-        quantidade: 0
-    },
-    {
-        id: 3,
-        nome: 'Sapato',
-        img: 'Sapato.png',
-        preco: 120.0,
-        quantidade: 0
-    },
-]
+fetch("./itens.json") 
+    .then(res => { return res.json() }) 
+    .then(items => {
+
+
 incinializarLoja = () => {
     var containerProdutos = document.getElementById('produtos');
     items.map((val)=>{
@@ -42,24 +17,25 @@ incinializarLoja = () => {
         `;
     })
 }
-incinializarLoja();
-
-atualizarCarrinho = () => {
-    var containerCarrinho = document.getElementById('carrinho');
-
-    containerCarrinho.innerHTML = "";
-
-    items.map((val)=>{
-        if(val.quantidade > 0){
-        containerCarrinho.innerHTML += `
-        <div class="info-carrinho">
-            <p>Produto: `+val.nome+`</p>
-            <p>Qtde: `+val.quantidade+`</p>
-            <p>Preço: `+val.preco+`</p>
-        </div>
-        `
-        };
-    })
+ atualizarCarrinho = () => { 
+    var total = 0 
+    var containerCarrinho = document.getElementById('carrinho'); 
+ 
+    containerCarrinho.innerHTML = ""; 
+ 
+    items.map((val) => { 
+        if (val.quantidade > 0) { 
+            containerCarrinho.innerHTML += ` 
+        <div class="info-carrinho"> 
+            <p>Produto: `+ val.nome + `</p> 
+            <p>Qtde: `+ val.quantidade + `</p> 
+            <p>Preço: `+ val.preco * val.quantidade + `</p> 
+        </div> 
+        ` 
+            total = total + val.preco * val.quantidade 
+            console.log(total) 
+        }; 
+    }) 
 }
 var links = document.getElementsByTagName('a');
 
@@ -71,4 +47,5 @@ var links = document.getElementsByTagName('a');
             return false;
         }) 
     }
-
+   } 
+);
