@@ -13,7 +13,7 @@
  <p> Essas são as caixa que vão receber os produtos e atualização do carinho</p>
  <img src="https://github.com/Deivison1/Loja-Stylus/blob/main/img/print/main.png" alt="">
  <hr>
- <p> Site da loja. <a href="https://deivison1.github.io/Loja-Stylus/">Aqui<a/></p>
+ <p> Site da loja <a href="https://deivison1.github.io/Loja-Stylus/">Stylus<a/></p>
  <p>Imagens ilustrativa da loja</p>
  <img src="https://github.com/Deivison1/Loja-Stylus/blob/main/img/home.png" alt="">
  <img src="https://github.com/Deivison1/Loja-Stylus/blob/main/img/carrinho.png" alt="">
