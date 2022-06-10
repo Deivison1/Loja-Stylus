@@ -11,5 +11,6 @@ Loja virtual feita em Javascript recebendo o conteúdo utilizando .json
  <br>
  <hr>
  <p> Essas são as caixa que iram receber do todo contéudo dos produtos e carinho</p>
- <img src="">
+ <img src="https://github.com/Deivison1/Loja-Stylus/blob/main/img/print/main.png" alt="">
+ <hr>
 <a href="https://deivison1.github.io/Loja-Stylus/">Site da loja<a/>
