@@ -14,3 +14,7 @@
  <img src="https://github.com/Deivison1/Loja-Stylus/blob/main/img/print/main.png" alt="">
  <hr>
  <p> Site da loja. <a href="https://deivison1.github.io/Loja-Stylus/">Aqui<a/></p>
+ <hr>
+ <p>Imagem ilustrativa da loja</p>
+ <img src="" alt="">
+ <img src="" alt="">
