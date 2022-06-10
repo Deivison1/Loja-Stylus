@@ -1,5 +1,5 @@
 <h1>Loja-Stylus</h1>
-<p>Loja virtual feita em Javascript recebendo o conteúdo utilizando .json</p>
+<p>Loja virtual feita em Javascript com manipulação do DOM (Document Object Model) recebendo os dados em JSON</p>
 
 <h2>Metodo global Fetch()</h2>
 <p>O primeiro parâmetro da função Fetch deve sempre ser o URL. Fetch recebe um segundo objeto JSON com opções como método, cabeçalhos, corpo da solicitação e assim por diante.</p>
