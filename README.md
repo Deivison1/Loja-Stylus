@@ -6,7 +6,7 @@ Loja virtual feita em Javascript recebendo o conteúdo utilizando .json
 <img src="https://github.com/Deivison1/Loja-Stylus/blob/main/img/print/fetch.png"alt="print-exemplo">
 <br>
 <hr>
-<p>Para isso, criei uma função que recebe os "itens" do json e reorna para o HTML em suas repetivas caixas(div). Assim populando a página de forma dinânimca, com manipulação do DOM (Document Object Model).</p>
+<p>Para isso, criei uma função que recebe os "itens" do json e retorna para o HTML em suas repetivas caixas(div's). Assim populando a página de forma dinânimca, com manipulação do DOM (Document Object Model).</p>
  <img src="https://github.com/Deivison1/Loja-Stylus/blob/main/img/print/carregar-conteudo.png" alt= "">
  <br>
  <hr>
