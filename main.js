@@ -32,7 +32,7 @@ var containerCarrinho = document.getElementById('carrinho');
             <div class="info-carrinho"> 
                 <p>Produto: `+ val.nome + `</p> 
                 <p>Qtde: `+ val.quantidade + `</p> 
-                <p style="float:right;">Preço: R$ `+ val.preco * val.quantidade + `</p> 
+                <p>Preço: R$ `+ val.preco * val.quantidade + `</p> 
             </div> 
         ` 
         valorTotal = valorTotal + val.preco * val.quantidade 

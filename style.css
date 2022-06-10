@@ -148,22 +148,17 @@ li > a{
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     margin-top: 1rem;
     box-shadow: 1px 1px 1px #1a1a1d12;
     
-}
-.info-carrinho > p{
-    margin-right: 20px;
 }
 .info-total{
     margin-top: 1rem;
     width: 100%;
     display: flex;
     align-items: center;
-    
-}
-.info-total > p{
-    margin-right: 20px;
+    justify-content: space-around;
 }
 .container-form{
     width: 30%;
@@ -294,7 +289,8 @@ button:focus{
     color: #0e76a8;
 }
 @media screen and (max-width: 881px){
-    .info-carrinho > p{
+    .info-carrinho,
+    .info-total > p{
         font-size: 0.70rem;
         margin: 3px;
     }
@@ -306,7 +302,6 @@ button:focus{
 }
     
 .checkbox-container{
-    top: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -428,12 +423,6 @@ li:hover{
 }
 @media screen and (max-width: 590px){
     
-    .titulo > h1{
-        font-size: 0.85rem;
-    }
-    .social-media i{
-        font-size: 15px;
-    }
     .checkbox{
         width: 50px;
     }
@@ -447,9 +436,13 @@ li:hover{
     .produto-single a{
         font-size: .75rem;
     }
-    
-    .info-carrinho{
-        flex-direction: column;
+    #carrinho{
+        width: 90%;
+    }
+    .info-carrinho, 
+    .info-total{
+        width: 100%;
+        
     }
     .container-form{
         width: 90%;
@@ -459,14 +452,27 @@ li:hover{
     textarea,
     button, 
     .info-carrinho,
+    .info-total,
     .container-form > p{
-        font-size: 0.65rem;
+        font-size: 0.60rem;
         line-height: 1.5;
     }
     textarea{
         height: 4rem;
     }
     .logo{
+        width: 80%;
         font-size: 0.60rem;
+    }
+    .descricao{
+        width: 80%;
+    }
+    .social-media{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-media i{
+        font-size: 15px;
     }
 }
