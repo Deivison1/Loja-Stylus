@@ -35,9 +35,12 @@ containerCarrinho.innerHTML = "";
         if (val.quantidade > 0) { 
             containerCarrinho.innerHTML += ` 
             <div class="info-carrinho"> 
-                <p>Produto: `+ val.nome + `</p> 
-                <p>Qtde: `+ val.quantidade + `</p> 
-                <p>Preço: R$ `+ val.preco * val.quantidade + `</p> 
+                <p class="info-carrinho-produto">
+                   Produto: `+ val.nome + `</p> 
+                <p class="info-carrinho-quantidade">
+                   Qtde: `+ val.quantidade + `</p> 
+                <p class="info-carrinho-preco">
+                   Preço: R$ `+ val.preco * val.quantidade +`</p> 
             </div> 
         ` 
         valorTotal = valorTotal + val.preco * val.quantidade 
@@ -47,7 +50,7 @@ containerCarrinho.innerHTML = "";
         containerCarrinho.innerHTML += `
         <div class="info-total">
             <p>Quantidade total: ${quantidadeTotal}</p> 
-            <p Style="float: right;">Valor total: R$ ${valorTotal}</p> 
+            <p>Valor total: R$ ${valorTotal}</p> 
         </div>`;
             
         } 

@@ -150,8 +150,17 @@ li > a{
     justify-content: space-around;
     margin-top: 1rem;
     box-shadow: 1px 1px 1px #1a1a1d12;
-    
 }
+.info-carrinho-produto { 
+     width: 60%;  
+} 
+.info-carrinho-quantidade { 
+    width: 15%;   
+} 
+.info-carrinho-preco { 
+    text-align: right; 
+    width: 25%;  
+} 
 .info-total{
     margin-top: 1rem;
     width: 100%;
@@ -160,7 +169,7 @@ li > a{
     justify-content: space-around;
 }
 .container-form{
-    width: 30%;
+    width: 50vw;
     padding: 5px;
     margin: auto;
     margin-top: 2rem;
