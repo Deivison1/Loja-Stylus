@@ -1,19 +1,25 @@
+const navLink = document.querySelectorAll('.nav-link');
+
+function linkAction(){
+    document.getElementById('toggle').checked = false;
+}
+navLink.forEach(n => n.addEventListener('click', linkAction));
+
 fetch("./itens.json") 
     .then(res => { return res.json() }) 
     .then(items => { 
 
 incinializarLoja = () => { 
 var containerProdutos = document.getElementById('produtos'); 
-items.map((val) => { 
-containerProdutos.innerHTML += ` 
-<div class="produto-single"> 
-  <img src="./img/`+ val.img + `"<img/> 
-  <p>`+ val.nome + `</p> 
-  <p>Valor: R$ `+ val.preco +`</p> 
-  <a class= "link-carrinho"key="`+ val.id + `" href="#carrinho">Adicionar ao carrinho!</a> 
-</div> 
- 
-   `; 
+    items.map((val) => { 
+    containerProdutos.innerHTML += ` 
+    <div class="produto-single"> 
+        <img src="./img/`+ val.img + `"<img/> 
+        <p>`+ val.nome + `</p> 
+        <p>Valor: R$ `+ val.preco +`</p> 
+        <a class= "link-carrinho"key="`+ val.id + `" href="#carrinho">Adicionar ao carrinho!</a> 
+    </div> 
+    `; 
  }) 
 } 
 incinializarLoja(); 
@@ -58,3 +64,4 @@ containerCarrinho.innerHTML = "";
  
     } 
 );
+

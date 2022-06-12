@@ -22,7 +22,7 @@ body{
     box-shadow: 1px 1px 1px #1a1a1d12;
     padding: 0 40px;
 }
-.titulo{
+.img-titulo{
     height: 45px;
     width: 100px;
     display: flex;
@@ -31,7 +31,7 @@ body{
     border-radius: 0.15rem;
     box-shadow: 2px 1px 1.5px 1px  #8383e5e2; 
 }
-.titulo > img{
+.img-titulo > img{
     width: 60px;
     height: 35px;
     border-radius: 0.15rem;
@@ -66,16 +66,15 @@ li > a{
 .nav-link:hover{
     background-color: #e8e7e7;
 }
-.contato{
-    background-color: #8383e5e2;
-}
-.contato:hover{
+.link-contato{
     background-color: #6e6eda;
 }
-.link-contato{
-    color: #ffffff;
+.link-contato > a{
+    color: #ffff;
 }
-
+.link-contato:hover{
+    background-color: #5151c4;
+}
 .titulo-vitrine{
     margin-top: 2rem;
     text-align: center;
