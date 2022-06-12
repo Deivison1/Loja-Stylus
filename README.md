@@ -1,5 +1,6 @@
 <h1>Loja-Stylus</h1>
-<p>Loja virtual feita em Javascript recebendo o conteúdo utilizando .json</p>
+<p>Loja virtual feita em Javascript com manipulação do DOM (Document Object Model) recebendo os dados em JSON.
+O site está totalmente reponsivo</p>
 
 <h2>Metodo global Fetch()</h2>
 <p>O primeiro parâmetro da função Fetch deve sempre ser o URL. Fetch recebe um segundo objeto JSON com opções como método, cabeçalhos, corpo da solicitação e assim por diante.</p>
@@ -13,4 +14,7 @@
  <p> Essas são as caixa que vão receber os produtos e atualização do carinho</p>
  <img src="https://github.com/Deivison1/Loja-Stylus/blob/main/img/print/main.png" alt="">
  <hr>
-<a href="https://deivison1.github.io/Loja-Stylus/">Site da loja<a/>
+ <p> Site da loja <a href="https://deivison1.github.io/Loja-Stylus/">Stylus<a/></p>
+ <p>Imagens ilustrativa da loja</p>
+ <img src="https://github.com/Deivison1/Loja-Stylus/blob/main/img/home.png" alt="">
+ <img src="https://github.com/Deivison1/Loja-Stylus/blob/main/img/carrinho.png" alt="">
