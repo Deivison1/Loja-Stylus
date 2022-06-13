@@ -168,6 +168,17 @@ li > a{
     align-items: center;
     justify-content: space-around;
 }
+.btn-remover{
+    width: 15px;
+    margin: 4px;
+    padding: 1px;
+    display: block;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 0.15rem;
+    background-color: #FF4949
+}
 .container-form{
     width: 50vw;
     padding: 5px;
@@ -225,8 +236,8 @@ form > button{
     transition: 0.3s ease-in-out;
 }
 
-button:hover,
-button:focus{
+.btn-enviar:hover,
+.btn-enviar:focus{
     outline: none;
     background: #6e6eda;
 }

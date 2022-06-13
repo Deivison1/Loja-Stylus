@@ -1,10 +1,3 @@
-const navLink = document.querySelectorAll('.nav-link');
-
-function linkAction(){
-    document.getElementById('toggle').checked = false;
-}
-navLink.forEach(n => n.addEventListener('click', linkAction));
-
 fetch("./itens.json") 
     .then(res => { return res.json() }) 
     .then(items => { 
@@ -27,6 +20,7 @@ incinializarLoja();
 atualizarCarrinho = () => { 
 
 var valorTotal = 0;
+var removerItem = 0;
 var quantidadeTotal = 0;
 var containerCarrinho = document.getElementById('carrinho'); 
  
@@ -41,19 +35,22 @@ containerCarrinho.innerHTML = "";
                    Qtde: `+ val.quantidade + `</p> 
                 <p class="info-carrinho-preco">
                    Preço: R$ `+ val.preco * val.quantidade +`</p> 
+                   <button class= "${val.id} btn-remover"> X </button> 
             </div> 
         ` 
         valorTotal = valorTotal + val.preco * val.quantidade 
         quantidadeTotal = quantidadeTotal + val.quantidade 
+        
             }; 
+        
         }) 
         containerCarrinho.innerHTML += `
         <div class="info-total">
             <p>Quantidade total: ${quantidadeTotal}</p> 
             <p>Valor total: R$ ${valorTotal}</p> 
         </div>`;
-            
         } 
+
         var links = document.getElementsByTagName('a'); 
  
         for (var i = 0; i < links.length; i++) { 
@@ -67,4 +64,9 @@ containerCarrinho.innerHTML = "";
  
     } 
 );
+const navLink = document.querySelectorAll('.nav-link');
 
+function linkAction(){
+    document.getElementById('toggle').checked = false;
+}
+navLink.forEach(n => n.addEventListener('click', linkAction));
