@@ -7,12 +7,12 @@ fetch("./itens.json")
  
 incinializarLoja = () => { 
 var containerProdutos = document.getElementById('produtos'); 
-    items.map((val) => { 
+items.map((val) => { 
     containerProdutos.innerHTML += `  
         <div class="produto-single">  
             <img src="./img/`+ val.img + `"<img/>  
             <p>`+ val.nome + `</p>  
-            <p>Valor: R$ `+ val.preco + `</p>  
+            <p>Valor: R$ `+ (val.preco).toFixed(2).replace(".", ",") + `</p>  
             <button id=${val.id} onclick="fnClick(${val.id})" class= "link-carrinho"key="` + val.id + `" href="#carrinho">Adicionar ao carrinho!</button>  
         </div>` 
            }) 
@@ -42,7 +42,7 @@ var containerCarrinho = document.getElementById('carrinho');
                 <div class="info-carrinho"> 
                     <p class="info-carrinho-produto">Produto: ${val.nome}</p> 
                     <p class="info-carrinho-quantidade">Qtde:  ${val.quantidade}  </p> 
-                    <p class="info-carrinho-preco">Preço: R$ ${val.preco * val.quantidade}</p> 
+                    <p class="info-carrinho-preco">Preço: R$ ${(val.preco * val.quantidade).toFixed(2).replace(".", ",")}</p> 
                     <button id="${val.id}" class="btn-remover" onclick="fnDelete(${val.id})"> X  </button> 
                 </div> ` 
             valorTotal = valorTotal + val.preco * val.quantidade 
@@ -51,17 +51,17 @@ var containerCarrinho = document.getElementById('carrinho');
         containerCarrinho.innerHTML += ` 
         <div class="info-total"> 
             <p>Quantidade total: ${quantidadeTotal}</p>  
-            <p Style="float: right;">Valor total: R$ ${valorTotal}</p>  
+            <p Style="float: right;">Valor total: R$ ${valorTotal.toFixed(2).replace(".", ",")}</p>  
         </div>`; 
  
     } 
  
         fnDelete = (e) => { 
             carrinho = carrinho.filter((del => { 
-                return del.id !== e })) 
+                return del.id !== e}))
+                carrinho[e].quantidade = 0 
             fnCarrinho() 
         } 
- 
     })
     const navLink = document.querySelectorAll('.nav-link');
 

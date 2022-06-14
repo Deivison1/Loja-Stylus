@@ -3,29 +3,29 @@
         "id": 0,
         "nome": "Camiseta modelo 1",
         "img": "Camiseta.png",
-        "preco": 35.00,
-        "quantidade": 0
+        "preco": 35.30,
+        "quantidade": 1
     },
     {
         "id": 1,
         "nome": "Camiseta modelo 2",
         "img": "Camiseta.png",
-        "preco": 40.00,
-        "quantidade": 0
+        "preco": 40.70,
+        "quantidade": 1
     },
     {
         "id": 2,
         "nome": "Camiseta modelo 3",
         "img": "Camiseta.png",
-        "preco": 42.00,
-        "quantidade": 0
+        "preco": 42.80,
+        "quantidade": 1
     },
     {
         "id": 3,
         "nome": "Sapato",
         "img": "Sapato.png",
         "preco": 120.00,
-        "quantidade": 0
+        "quantidade": 1
     },
 
     {
@@ -33,27 +33,27 @@
         "nome": "Camiseta modelo 1",
         "img": "Camiseta.png",
         "preco": 35.00,
-        "quantidade": 0
+        "quantidade": 1
     },
     {
         "id": 5,
         "nome": "Camiseta modelo 2",
         "img": "Camiseta.png",
         "preco": 40.00,
-        "quantidade": 0
+        "quantidade": 1
     },
     {
         "id": 6,
         "nome": "Camiseta modelo 3",
         "img": "Camiseta.png",
         "preco": 48.00,
-        "quantidade": 0
+        "quantidade": 1
     },
     {
         "id": 7,
         "nome": "Sapato",
         "img": "Sapato.png",
         "preco": 120.00,
-        "quantidade": 0
+        "quantidade": 1
     }
 ]
