@@ -169,8 +169,9 @@ li > a{
     justify-content: space-around;
 }
 .btn-remover{
-    width: 15px;
+    width: 1rem;
     margin: 4px;
+    font-size: 0.75rem;
     padding: 1px;
     display: block;
     border: none;

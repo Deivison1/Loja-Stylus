@@ -16,11 +16,10 @@ var containerProdutos = document.getElementById('produtos');
  }) 
 } 
 incinializarLoja(); 
- 
+
 atualizarCarrinho = () => { 
 
 var valorTotal = 0;
-var removerItem = 0;
 var quantidadeTotal = 0;
 var containerCarrinho = document.getElementById('carrinho'); 
  
@@ -38,10 +37,10 @@ containerCarrinho.innerHTML = "";
                    <button class= "${val.id} btn-remover"> X </button> 
             </div> 
         ` 
-        valorTotal = valorTotal + val.preco * val.quantidade 
-        quantidadeTotal = quantidadeTotal + val.quantidade 
+        valorTotal = valorTotal + val.preco * val.quantidade;
+        quantidadeTotal = quantidadeTotal + val.quantidade;
         
-            }; 
+        }; 
         
         }) 
         containerCarrinho.innerHTML += `
@@ -49,10 +48,9 @@ containerCarrinho.innerHTML = "";
             <p>Quantidade total: ${quantidadeTotal}</p> 
             <p>Valor total: R$ ${valorTotal}</p> 
         </div>`;
-        } 
+        }
+        var links = document.getElementsByTagName('a');
 
-        var links = document.getElementsByTagName('a'); 
- 
         for (var i = 0; i < links.length; i++) { 
             links[i].addEventListener('click', function () { 
                 let key = this.getAttribute('key'); 
@@ -61,7 +59,7 @@ containerCarrinho.innerHTML = "";
                 return false; 
             }) 
         } 
- 
+        
     } 
 );
 const navLink = document.querySelectorAll('.nav-link');
