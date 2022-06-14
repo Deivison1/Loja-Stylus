@@ -148,7 +148,6 @@ li > a{
     width: 100%;
     display: flex;
     align-items: center;
-
     justify-content: center;
     margin-top: 1rem;
     box-shadow: 1px 1px 1px #1a1a1d12;
@@ -168,7 +167,10 @@ li > a{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+.info-total > p{
+    margin: 3px;
 }
 .btn-remover{
     margin: 4px;
@@ -178,9 +180,26 @@ li > a{
     cursor: pointer;
     background-color: transparent;
 }
+
 .bxs-x-circle{
     color: #e95757;
+    font-size: 18px;
     background-color: white;
+}
+.btn-pay{
+    border: none;
+    display: block;
+    color: #ffffff;
+    padding: 5px;
+    margin: 3px;
+    width: 12%;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    background-color: #0e76a8;
+    transition: 0.2s ease-in-out;
+}
+.btn-pay:hover{
+    background-color: #074461;
 }
 .container-form{
     width: 50vw;
@@ -314,8 +333,11 @@ form > button{
     .info-carrinho,
     .info-total > p{
         font-size: 0.60rem;
-        margin: 3px;
     }
+    .bxs-x-circle{
+        font-size: 12px;
+    }
+    
 }
 @media screen and (max-width: 767px) {
 .header-container{
