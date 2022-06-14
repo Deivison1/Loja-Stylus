@@ -173,7 +173,6 @@ li > a{
     width: 1rem;
     margin: 4px;
     font-size: 0.75rem;
-    padding: 1px;
     display: block;
     border: none;
     cursor: pointer;
@@ -312,7 +311,7 @@ form > button{
 @media screen and (max-width: 881px){
     .info-carrinho,
     .info-total > p{
-        font-size: 0.70rem;
+        font-size: 0.60rem;
         margin: 3px;
     }
 }
@@ -463,7 +462,10 @@ li:hover{
     .info-carrinho, 
     .info-total{
         width: 100%;
-        
+    }
+    .btn-remover{
+        font-size: 0.55rem;
+        width: 0.75rem;
     }
     .container-form{
         width: 90%;
