@@ -148,7 +148,8 @@ li > a{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+
+    justify-content: center;
     margin-top: 1rem;
     box-shadow: 1px 1px 1px #1a1a1d12;
 }
@@ -170,15 +171,16 @@ li > a{
     justify-content: space-around;
 }
 .btn-remover{
-    width: 1rem;
     margin: 4px;
     font-size: 0.75rem;
     display: block;
     border: none;
     cursor: pointer;
-    color: #ffffff;
-    border-radius: 0.15rem;
-    background-color: #FF4949
+    background-color: transparent;
+}
+.bxs-x-circle{
+    color: #e95757;
+    background-color: white;
 }
 .container-form{
     width: 50vw;
@@ -462,10 +464,6 @@ li:hover{
     .info-carrinho, 
     .info-total{
         width: 100%;
-    }
-    .btn-remover{
-        font-size: 0.55rem;
-        width: 0.75rem;
     }
     .container-form{
         width: 90%;

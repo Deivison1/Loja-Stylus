@@ -49,8 +49,8 @@ var containerCarrinho = document.getElementById('carrinho');
                 <div class="info-carrinho"> 
                     <p class="info-carrinho-produto">Produto: ${val.nome}</p> 
                     <p class="info-carrinho-quantidade">Qtde:  ${val.quantidade}  </p> 
-                    <p class="info-carrinho-preco">Preço: R$ ${(val.preco * val.quantidade).toFixed(2).replace(".", ",")}</p> 
-                    <button id="${val.id}" class="btn-remover" onclick="fnDelete(${val.id})"> X  </button> 
+                    <p class="info-carrinho-preco">R$ ${(val.preco * val.quantidade).toFixed(2).replace(".", ",")}</p> 
+                    <button id="${val.id}" class="btn-remover" onclick="fnDelete(${val.id})"><i class='bx bxs-x-circle' ></i></button> 
                 </div> ` 
             valorTotal = valorTotal + val.preco * val.quantidade 
             quantidadeTotal = quantidadeTotal + val.quantidade 
