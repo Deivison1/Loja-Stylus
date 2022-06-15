@@ -59,7 +59,7 @@ var containerCarrinho = document.getElementById('carrinho');
         <div class="info-total"> 
             <p>Quantidade total: ${quantidadeTotal}</p>  
             <p Style="float: right;">Valor total: R$ ${valorTotal.toFixed(2).replace(".", ",")}</p>  
-            <button onclick="pagar${quantidadeTotal}" class="btn-pay">pagar</button>
+            <button class="btn-pay">pagar</button>
         </div>`; 
  
     };
