@@ -5,7 +5,10 @@
 
 <p>Loja virtual feita em Javascript com manipulação do DOM (Document Object Model) recebendo os dados em JSON.
 O site está totalmente reponsivo</p>
+<hr>
+Gif ilustrando como a loja se comporta
 
+![animacao](https://github.com/Deivison1/Loja-Stylus/blob/main/Anima%C3%A7%C3%A3o.gif)
 ##Metodo global Fetch()
 O primeiro parâmetro da função Fetch deve sempre ser o URL. Fetch recebe um segundo objeto JSON com opções como método, cabeçalhos, corpo da solicitação e assim por diante.
 ``` Javascript
@@ -47,9 +50,7 @@ incinializarLoja();
             <div id="carrinho"></div>
    </main>
   ```
- <hr>
+
  
- <p> Site da loja <a href="https://deivison1.github.io/Loja-Stylus/">Stylus<a/></p>
- <p>Imagens ilustrativa da loja</p>
- <img src="https://github.com/Deivison1/Loja-Stylus/blob/main/img/home.png" alt="">
- <img src="https://github.com/Deivison1/Loja-Stylus/blob/main/img/carrinho.png" alt="">
+
+ 
