@@ -1,4 +1,4 @@
-<h1 style="align: center">Loja-Stylus</h1>
+<h1 style="text-align: center;">Loja-Stylus</h1>
 <p>Loja virtual feita em Javascript com manipulação do DOM (Document Object Model) recebendo os dados em JSON.
 O site está totalmente reponsivo</p>
 
