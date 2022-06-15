@@ -1,7 +1,11 @@
 
-<div style="margin: auto;">
+<div align= "center">
  <h1>Loja virtual Stylus</h1>
  <img src="https://github.com/Deivison1/Loja-Stylus/blob/main/img/Logo2-1.png">
+ 
+ <a text-decoration= "none" href="" >b</a>
+ <a text-decoration= "none" href="" >b</a>
+ <a text-decoration= "none" href="" >b</a>
 </div>
 
 <p>Loja virtual feita em Javascript com manipulação do DOM (Document Object Model) recebendo os dados em JSON.
@@ -9,7 +13,7 @@ O site está responsivo para diferentes tamanhos de tela!</p>
 
 <hr>
 
-Gif ilustrando como a loja se comporta
+<p align="center">Gif ilustrando como a loja se comporta</p>
 
 <br>
 
