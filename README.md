@@ -1,5 +1,5 @@
-<h1 style="align: center;">Loja-Stylus
-<img src="https://github.com/Deivison1/Loja-Stylus/blob/main/img/Logo2-1.png"></h1>
+
+<img src="https://github.com/Deivison1/Loja-Stylus/blob/main/img/Logo2-1.png">
 <p>Loja virtual feita em Javascript com manipulação do DOM (Document Object Model) recebendo os dados em JSON.
 O site está totalmente reponsivo</p>
 
