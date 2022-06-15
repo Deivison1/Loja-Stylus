@@ -1,5 +1,5 @@
 
-<div style="align: center;">
+<div style="align: center;"><h1>Loja virtual Stylus</h1>
  <img src="https://github.com/Deivison1/Loja-Stylus/blob/main/img/Logo2-1.png">
 </div>
 
