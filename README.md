@@ -4,7 +4,9 @@
  <img src="https://github.com/Deivison1/Loja-Stylus/blob/main/img/Logo2-1.png">
  </div>
 
+
 <ul>
+  <li>:wrench: Funcionalidades:</li>
   <li>:heavy_check_mark: Links de navegação do site</li>
   <li>:heavy_check_mark: Menu hambúrguer</li>
   <li>:heavy_check_mark: Lista de produtos</li>
