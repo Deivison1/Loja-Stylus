@@ -381,6 +381,7 @@ form > button{
 .checkbox .trace:nth-child(3){
     top: 20px;
     transform: rotate(0);
+    
 }
 .menu{
     position: absolute;
