@@ -39,7 +39,10 @@ fetch("./itens.json")
 
 <hr>
 
+<h2>Funções para adicionar e excluir itens()</h2>
+
 Para isso, criei uma função que recebe os "itens" do json e retorna para o HTML em suas repetivas caixas(div's). Assim populando a página de forma dinânimca, com manipulação do DOM (Document Object Model).
+
 ``` Javascript
 var carrinho = [] 
  
