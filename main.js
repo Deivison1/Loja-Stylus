@@ -32,11 +32,10 @@ var idEncontrado = false;
         if (carrinho != [] && carrinho[x]?.id == e) { 
             carrinho[x].quantidade++ 
             idEncontrado = true 
+        }
+    }if (idEncontrado == false) { 
+            carrinho.push(items[e])
         } 
-    } 
-    if (idEncontrado == false) { 
-        carrinho.push(items[e])
-    } 
     fnCarrinho() 
 };
 function fnCarrinho() { 
