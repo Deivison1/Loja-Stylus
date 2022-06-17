@@ -23,7 +23,7 @@ O site está responsivo para diferentes tamanhos de tela!</p>
 
 <br>
 
-![animacao](https://github.com/Deivison1/Loja-Stylus/blob/main/Anima%C3%A7%C3%A3o.gif)
+![animacao](https://github.com/Deivison1/Loja-Stylus/blob/main/img/Anima%C3%A7%C3%A3o.gif)
 
 <hr>
 
