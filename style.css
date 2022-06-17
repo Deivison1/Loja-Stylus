@@ -81,19 +81,21 @@ li > a{
     margin-top: 3rem;
     width: 100%;
     transition: 0.3s;
-    
 }
 .logo-marca{
     width: 30%;
+    height: 100px;
     margin: 5px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    
 }
 .titulo-marca{
+    margin-top: 1rem;
     color: #6e6eda;
     font-size: 3rem;
+}
+.logo-marca > p{
+    margin-top: 5px;
 }
 .sobre{
     margin: 2rem;
@@ -101,6 +103,11 @@ li > a{
     flex-direction: column;
     line-height: 1.2;
     width: 40%;
+    padding: 5px;
+    
+}
+.sobre > p{
+    font-size: 1.2rem;
     
 }
 .conferir{
@@ -111,7 +118,7 @@ li > a{
     margin-top: 10px;
     padding: 5px;
     border-radius: 0.25rem;
-    background-color: #f04949;
+    background-color: #ed3237;
 }
 .titulo-vitrine{
     margin-top: 2rem;
@@ -501,9 +508,30 @@ li:hover{
     visibility: visible;
     opacity: 1;
     }
+    .container-descricao{
+        align-items: center;
+        flex-direction: column;
+    }
+    .titulo-marca{
+        font-size: 2.5rem;
+    }
+    .logo-marca, 
+    .sobre{
+        width: 90%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .sobre > p{
+        font-size: clamp(.813rem,.7rem + .55vw,1.125rem);
+    }
+    .conferir{
+        width: 40%;
+        font-size: 0.75rem;
+    }
     .produto-single{
         width: 100%;
-        row-gap: .5rem;
+        row-gap: 0.2rem;
         margin-right: 0;
     }
     
