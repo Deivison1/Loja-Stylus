@@ -16,16 +16,18 @@ incinializarLoja = () => {
 var containerProdutos = document.getElementById('produtos'); 
 items.map((val) => { 
     containerProdutos.innerHTML += `  
-        <div class="produto-single">  
-            <img src="./img/`+ val.img + `"<img/>  
-            <p>`+ val.nome + `</p>  
-            <p>Valor: R$ `+ (val.preco).toFixed(2).replace(".", ",") + `</p> 
-            <p class="juros">6x sem juros</p> 
-            <button id=${val.id} onclick="fnClick(${val.id})" class= "link-carrinho"key="` + val.id + `" href="#carrinho">Adicionar ao carrinho!</button>  
-        </div>` 
-           }) 
-        };
+    <div class="produto-single">  
+        <img src="./img/`+ val.img + `"<img/>  
+        <p>`+ val.nome + `</p>  
+        <p>Valor: R$ `+ (val.preco).toFixed(2).replace(".", ",") + `</p> 
+        <p class="juros">6x sem juros</p> 
+        <button id=${val.id} onclick="fnClick(${val.id})" class= "link-carrinho"key="` + val.id + `" href="#carrinho">Adicionar ao carrinho!</button>  
+    </div>` 
+   }) 
+};
 incinializarLoja(); 
+
+
 fnClick = (e) => { 
 
 var idEncontrado = false;
@@ -69,4 +71,6 @@ var containerCarrinho = document.getElementById('carrinho');
             return del.id !== e })) 
         fnCarrinho() 
     }; 
+    
 });
+
