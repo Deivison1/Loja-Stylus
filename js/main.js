@@ -28,16 +28,16 @@ items.map((val) => {
 incinializarLoja(); 
 
 
-fnClick = (e) => { 
+fnClick = (elemento) => { 
 
 var idEncontrado = false;
     for (let x = 0; x < items.length; x++) { 
-        if (carrinho != [] && carrinho[x]?.id == e) { 
+        if (carrinho != [] && carrinho[x]?.id == elemento) { 
             carrinho[x].quantidade++ 
             idEncontrado = true 
         }
     }if (idEncontrado == false) { 
-            carrinho.push(items[e])
+            carrinho.push(items[elemento])
         } 
     fnCarrinho() 
 };
