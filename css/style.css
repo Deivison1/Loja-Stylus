@@ -525,11 +525,11 @@ li:hover{
     .logo-marca, 
     .sobre{
         width: 90%;
-        text-align: center;
         align-items: center;
         justify-content: center;
     }
     .sobre > p{
+        margin-left: 15px;
         font-size: clamp(.813rem,.7rem + .55vw,1.125rem);
     }
     .conferir{
