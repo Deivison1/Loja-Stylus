@@ -385,6 +385,28 @@ form > button{
 .bxl-linkedin-square{
     color: #0e76a8;
 }
+
+.scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: -30%;
+    background-color: #ffffff;
+    box-shadow: 0 8px 12px hsl(228, 66%, 45%, .1);
+    display: inline-flex;
+    padding: .35rem;
+    border-radius: .25rem;
+    color: #6e6eda;
+    font-size: 1.25rem;
+    z-index: 10;
+    transition: .3s;
+}
+.scrollup:hover{
+    transform: translateY(-.25rem);
+    color: #8383e5e2;
+}
+.show-scroll{
+    bottom: 8rem;
+}
 @media screen and (max-width: 881px){
     .info-carrinho,
     .info-total > p{
